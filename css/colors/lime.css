@@ -4,9 +4,9 @@
  *
  *  Defult CSS
  */
-/*.overlay-color {
+.overlay-color {
   background-color: rgba(0, 0, 0, 0.75);
-}*/
+}
 .btn-group .btn-fill {
   background: #98d361 !important;
   border-color: #98d361 !important;
