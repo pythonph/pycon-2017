@@ -4,9 +4,9 @@
  *
  *  Defult CSS
  */
-.overlay-color {
+/*.overlay-color {
   background-color: rgba(0, 0, 0, 0.75);
-}
+}*/
 .btn-group .btn-fill {
   background: #98d361 !important;
   border-color: #98d361 !important;
@@ -29,7 +29,7 @@
  ********************************
  *
  *  Header CSS
- *  
+ *
  */
 .header-navbar #myNavbar .active > a {
   border-bottom-color: #98d361;
@@ -38,7 +38,7 @@
  ********************************
  *
  *  About Our Event CSS
- *  
+ *
  */
 .about-our-event-left h2 {
   color: #98d361;
@@ -50,7 +50,7 @@
  ********************************
  *
  *  our featured speaker CSS
- *  
+ *
  */
 .our-featured-speaker-right h2 {
   color: #98d361;
@@ -59,7 +59,7 @@
  ********************************
  *
  *  Scedule CSS
- *  
+ *
  */
 .scedule-main .active .btn-border {
   background: #98d361;
@@ -76,7 +76,7 @@
  ********************************
  *
  *  Speakers CSS
- *  
+ *
  */
 .speakers-body h2 {
   color: #98d361;
@@ -91,7 +91,7 @@
  ********************************
  *
  *  Pricing Tables CSS
- *  
+ *
  */
 .table-single p {
   background: #98d361;
@@ -103,7 +103,7 @@
  ********************************
  *
  *  Register CSS
- *  
+ *
  */
 .input-group .btn-fill {
   background-color: #98d361;
@@ -125,7 +125,7 @@
  ********************************
  *
  *  Collapse CSS
- *  
+ *
  */
 .collapse-right h2 {
   color: #98d361;
@@ -138,7 +138,7 @@
  ********************************
  *
  *  Testimonial CSS
- *  
+ *
  */
 .testimonial-body .tab-content .active h3 {
   color: #98d361;
@@ -150,7 +150,7 @@
  ********************************
  *
  *  Contact Us CSS
- *  
+ *
  */
 .contact-us-left h2 {
   color: #98d361;
@@ -169,7 +169,7 @@
 ******************************************
 *
 *   Footer CSS
-*  
+*
 */
 footer .btn-top:hover {
   color: #98d361;
@@ -183,7 +183,7 @@ footer .btn-top:hover {
  ********************************
  *
  *  Blog Body CSS
- *  
+ *
  */
 /*     blog-post CSS     */
 .blog-body .post-date {
@@ -208,7 +208,7 @@ aside ul li a:focus span {
      ********************************
      *
      *  Scedule CSS
-     *  
+     *
      */
   .dropdown .label:hover,
   .dropdown ul li:hover,
@@ -231,7 +231,7 @@ aside ul li a:focus span {
      ********************************
      *
      *  Testimonial CSS
-     *  
+     *
      */
   .testimonial-body .dropdown .label:hover,
   .testimonial-body .dropdown ul li:hover,
@@ -248,7 +248,7 @@ aside ul li a:focus span {
 ******************************************
 *
 *   IMAGE HOVER EFFECT CUSTOM CSS
-*    
+*
 */
 .view-first .mask {
   background-color: rgba(152, 211, 97, 0.5);
@@ -260,7 +260,7 @@ aside ul li a:focus span {
 ******************************************
 *
 *   NICE SCROLL CUSTOM CSS
-*    
+*
 */
 .nicescroll-rails > div {
   background-color: #98d361 !important;
@@ -269,7 +269,7 @@ aside ul li a:focus span {
 ******************************************
 *
 *   FLEX SLIDER CSS
-*    
+*
 */
 a.next:hover,
 a.prev:hover {
@@ -280,7 +280,7 @@ a.prev:hover {
 ******************************************
 *
 *   PRELOADER CSS
-*    
+*
 */
 .bubblingG span {
   background: #98d361;
