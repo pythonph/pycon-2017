@@ -2,11 +2,16 @@
 <html>
 <head>
   <title>PyCon PH 2017</title>
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,800" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font: 16px/1.5 'Work Sans', sans-serif;
+    }
+    a {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
     }
     .hero-page {
       background: url(images/cdo-river.jpg) no-repeat;
@@ -17,7 +22,6 @@
       justify-content: center;
       align-items: center;
       text-shadow: 0 0 .2em rgba(0, 0, 0, 0.2);
-      text-transform: uppercase;
       line-height: 1;
       position: relative;
     }
@@ -31,7 +35,10 @@
       height: 100%;
     }
     .hero-page > .title {
+      text-transform: uppercase;
       position: relative;
+      font-weight: 800;
+      margin-bottom: 10vh;
     }
     .hero-page > .title > h1 {
       font-size: 10vw;
@@ -45,15 +52,23 @@
       font-size: 3vw;
       color: #26B19A;
     }
+    .hero-page > .navbar {
+      position: absolute;
+      left: 1em;
+      bottom: 1em;
+      width: 66%;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .hero-page > .navbar > a {
+      line-height: 1.5;
+    }
     .hero-page > .attrib {
+      opacity: 0.8;
       position: absolute;
       right: 1em;
       bottom: 1em;
-    }
-    .attrib > a {
-      display: inline-block;
-      color: white;
-      text-decoration: none;
       text-align: right;
     }
   </style>
@@ -63,6 +78,11 @@
       <h1>PyCon<br>PH 17<br><span>CDO</span></h1>
       <time>Feb 25-26</time>
     </div>
+    <nav class="navbar">
+      <a href="#">Call for Proposals</a>
+      <a href="#">Sponsorship</a>
+      <a href="#">Volunteer</a>
+    </nav>
     <div class="attrib">
       <a href="https://flic.kr/p/65wGh1">Cagayan De Oro River<br>by Stirmind</a>
     </div>
