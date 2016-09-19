@@ -46,12 +46,21 @@ h4 {
   font-family: 'Oswald', sans-serif;
 }
 h1 {
-  font-size: 40px;
-  line-height: 60px;
+  font-size: 100px;
+  line-height: 100px;
   font-weight: 300;
 }
 h1 b {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Gotham Black', sans-serif;
+}
+h1 span {
+  color: #FEF002;
+}
+time {
+  font-family: 'Gotham Black', sans-serif;
+  color: #26B19A;
+  font-size: 50px;
+  line-height: 50px;
 }
 h2 {
   font-size: 35px;
