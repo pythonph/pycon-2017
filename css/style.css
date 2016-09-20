@@ -467,7 +467,7 @@ h3 {
   overflow: hidden;
 }
 .about-background-image .background-right {
-  background-image: url('../images/schedule.jpg');
+  background-image: url('../images/theme.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   padding-left: 0;
@@ -688,7 +688,7 @@ h3 {
  *
  */
 .register-background {
-  background: url('../images/bg-4.jpg') top center fixed;
+  background: url('../images/2200-bkg.png') top center fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
