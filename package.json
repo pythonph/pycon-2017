@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "stylelint": "^7.3.0",
+    "stylelint-config-standard": "^13.0.0",
+    "stylelint-rscss": "^0.2.0"
+  },
+  "scripts": {
+    "test": "npm run lint:css",
+    "lint:css": "stylelint css/**/*"
+  }
+}
