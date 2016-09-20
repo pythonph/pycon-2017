@@ -1,82 +1,90 @@
-<!DOCTYPE html>
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en">
-    <head>
-
-        <!-- TITLE OF SITE -->
-        <title> PyCon Philippines 2017</title>
-
-
-        <meta charset="utf-8">
-        <meta name="description" content="PyCon Philippines 2017" />
-        <meta name="keywords" content="pycon, pyconph, pycon philippines, open source" />
-        <meta name="author" content="Santush Deb Nath, deviserweb">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-
-        <!--   FAV AND TOUCH ICONS   -->
-        <link rel="icon" href="images/favicon.ico">
-<!--         <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
- -->
-
-        <!-- GOOGLE FONTS -->
-        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,800" rel="stylesheet">
-
-        <!-- BOOTSTRAP CSS -->
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-
-        <!-- FONT ICONS -->
-        <link rel="stylesheet" href="css/font-awesome.css">
-
-        <!-- CAROUSEL SLIDERS -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/owl.theme.css">
-        <link rel="stylesheet" href="css/owl.transitions.css">
-
-        <!--  CSS3 ANIMATE CSS  -->
-        <link rel="stylesheet" href="css/animate.css">
-
-        <!--  DROPDOWN CSS  -->
-        <link rel="stylesheet" href="css/fancySelect.css" />
-
-        <!-- IMAGE HOVER EFFECT  -->
-        <link rel="stylesheet" href="css/hover-effect-animate.css" />
-        <link rel="stylesheet" href="css/hover-effect.css" />
-
-        <!--   COUSTOM CSS link  -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-
-    </head>
-    <body>
-
-
-        <header class="header-background header" id="header" data-stellar-background-ratio="0.5"> <!--Start: "Header Area"-->
-            <div class="fix header-overlay overlay-color">
-
-
-	            <div class="container">
-                    <div class="row header-body" id="header-body">
-
-                        <div class="clearfix">
-                        </div>
-
-                    	<div class="col-md-offset-1 col-md-5 heading fadeInUp animated" data-wow-offset="120" data-wow-duration="1.5s">
-                    		<h1><b>PYCON<br>PH 2017<br><span>CDO</span></b><h1>
-                            <h1><time><b>Feb 25-26</b></time><h1>
-                    	</div>
-                    </div><!-- End: header-body  -->
-                </div> <!-- End: container  -->
-
-
-            </div> <!-- End: fix header-overlay overlay-color  -->
-        </header> <!--End: Header Area-->
-    </body>
-
+<!doctype html>
+<html>
+<head>
+  <title>PyCon PH 2017</title>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,800" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font: 16px/1.5 'Work Sans', sans-serif;
+    }
+    a {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+    }
+    .hero-page {
+      background: url(images/2200-bkg.png) no-repeat;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 0 0 .2em rgba(0, 0, 0, 0.2);
+      line-height: 1;
+      position: relative;
+    }
+    .hero-page:before {
+      content: ' ';
+      background: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .hero-page > .title {
+      text-transform: uppercase;
+      position: relative;
+      font-weight: 800;
+      margin-bottom: 10vh;
+    }
+    .hero-page > .title > h1 {
+      font-size: 10vw;
+      margin: 0 0 .2em;
+      color: white;
+    }
+    .hero-page > .title > h1 > span {
+      color: #FEF002;
+    }
+    .hero-page > .title > time {
+      font-size: 3vw;
+      color: #26B19A;
+    }
+    .hero-page > .navbar {
+      position: absolute;
+      left: 1em;
+      bottom: 1em;
+      width: 66%;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .hero-page > .navbar > a {
+      line-height: 1.5;
+    }
+    .hero-page > .attrib {
+      opacity: 0.8;
+      position: absolute;
+      right: 1em;
+      bottom: 1em;
+      text-align: right;
+    }
+  </style>
+<body>
+  <section class="hero-page">
+    <div class="title">
+      <h1>PyCon<br>PH 17<br><span>CDO</span></h1>
+      <time>Feb 25-26</time>
+    </div>
+    <nav class="navbar">
+      <a href="#">Call for Proposals</a>
+      <a href="#">Sponsorship</a>
+      <a href="#">Volunteer</a>
+    </nav>
+<!--     <div class="attrib">
+      <a href="https://flic.kr/p/65wGh1">Cagayan De Oro River<br>by Stirmind</a>
+    </div> -->
+  </section>
 </html>
