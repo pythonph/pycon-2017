@@ -9,7 +9,13 @@ a {
   text-decoration: none;
 }
 
-.hero-page {
+h5 { font-size: 1.2rem; }
+h4 { font-size: 1.44rem; }
+h3 { font-size: 1.73rem; }
+h2 { font-size: 2.07rem; }
+h1 { font-size: 2.49rem; }
+
+.hero-section {
   background: url(../images/must.jpg) no-repeat center bottom;
   background-size: cover;
   height: 100vh;
@@ -21,7 +27,7 @@ a {
   position: relative;
 }
 
-.hero-page::before {
+.hero-section::before {
   content: ' ';
   background: rgba(0, 0, 0, 0.2);
   position: absolute;
@@ -31,49 +37,49 @@ a {
   height: 100%;
 }
 
-.hero-page > .title {
+.hero-section > .title {
   text-transform: uppercase;
   position: relative;
   font-weight: 800;
   margin-bottom: 10vh;
 }
 
-.hero-page > .title > h1 {
+.hero-section > .title > h1 {
   font-size: 10vw;
   margin: 0 0 0.2em;
   color: white;
 }
 
-.hero-page > .title > h1 > span {
+.hero-section > .title > h1 > span {
   color: #fef002;
 }
 
-.hero-page > .title > .details {
+.hero-section > .title > .details {
   background-color: #26b19a;
   color: white;
   font-size: 2vw;
   padding: 1rem;
 }
 
-.hero-page > .title > .details > time {
+.hero-section > .title > .details > time {
   font-size: 1.5em;
 }
 
-.hero-page > .navbar {
+.hero-section > .navbar {
   position: absolute;
   left: 1.5rem;
   bottom: 1.5rem;
   width: 50%;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
 }
 
-.hero-page > .navbar > a {
+.hero-section > .navbar > a {
   line-height: 1.5;
 }
 
-.hero-page > .attrib {
+.hero-section > .attrib {
   font-size: 0.8rem;
   opacity: 0.8;
   position: absolute;
