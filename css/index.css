@@ -107,27 +107,19 @@ section.-right > .caption {
   line-height: 1;
   text-transform: uppercase;
   font-weight: 800;
-  margin-left: 3rem;
+  margin-left: 8rem;
 }
 
 .hero-section > .title > h1 {
   font-size: 8vw;
   margin: 0 0 0.2em;
-  text-indent: -6rem;
+  text-indent: -8rem;
 }
 
 .hero-section > .title > h1 > span {
   position: relative;
   display: block;
   font-size: 1.44em;
-}
-
-.hero-section > .title > h1 > span:before {
-  content: ' ';
-  border-top: 3px solid;
-  width: 100%;
-  position: absolute;
-  left: -5rem;
 }
 
 .hero-section > .title > .details {
