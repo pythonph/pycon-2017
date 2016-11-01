@@ -14,24 +14,68 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,800">
   <link rel="stylesheet" href="./css/index.css">
 <body>
-  <section class="hero-section">
+  <section id="hero" class="hero-section -left">
     <div class="title">
-      <h1>PyCon<br>PH 17<br><span>CDO</span></h1>
+      <h1>PyCon<br>PH 17<span>CDO</span></h1>
       <div class="details">
-        Mindanao University of<br>
-        Science and Technology<br>
-        <time>Feb 25-26</time>
+	Mindanao University of<br>
+	Science and Technology<br>
+	<time>Feb 25-26</time>
       </div>
     </div>
-    <nav class="navbar">
-      <a class="typeform-share" href="https://marksteve.typeform.com/to/vqWkk4" data-mode="2" target="_blank">Interested in sponsoring?</a>
-      <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
-    </nav>
-    <div class="attrib">
+    <div class="caption">
       <a href="https://flic.kr/p/orswfD">
-        mindanao university of science & technology<br>
-        by wowel chaves condeza
+	mindanao university of science & technology<br>
+	by wowel chaves condeza
       </a>
     </div>
   </section>
+  <section id="about" class="about-section -right">
+    <div class="copy -centered">
+      <h2>What is PyCon PH?</h2>
+      <p>PyCon Philippines is a volunteer-run, not-for-profit conference centered around the Python Programming language.</p>
+      <p>The main goal of this conference is to provide a venue where the Python programming language and surrounding technologies can be explored, discussed and exercised.</p>
+      <p>We gather software engineers, programming enthusiasts, startup founders, corporate IT decision makers, students and IT educators in a 2-day event where we can collaborate and learn with each other.</p>
+    </div>
+  </section>
+  <section id="volunteer" class="volunteer-section -left">
+    <div class="copy -centered">
+      <h2>Volunteering is fun!</h2>
+      <p>PyCon Philippines is run by volunteers. The previous PyCons would not
+      have been successful without the help of these individuals.</p>
+    </div>
+  </section>
+  <nav class="nav-bar">
+    <a href="#hero"><strong>PyCon PH 2017</strong></a>
+    <a href="#about">About</a>
+    <a href="">Venue</a>
+    <a href="">Speakers</a>
+    <a href="">Tickets</a>
+    <a class="typeform-share" href="https://marksteve.typeform.com/to/vqWkk4" data-mode="2" target="_blank">Interested in sponsoring?</a>
+    <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+    <a href="#volunteer">Volunteer!</a>
+  </nav>
+  <script>
+    var scrolling
+    document.addEventListener('scroll', function (e) {
+      var scrollPos = window.scrollY
+      if (!scrolling) {
+	window.requestAnimationFrame(function() {
+	  toggleNavBar(scrollPos)
+	  scrolling = false
+	})
+      }
+      scrolling = true
+    })
+    var navBar = document.querySelector('.nav-bar')
+    var atTop = true
+    function toggleNavBar(pos) {
+      var nextAtTop = pos < 10
+      if (nextAtTop !== atTop) {
+        atTop = nextAtTop
+	navBar.classList.toggle('-visible', !atTop)
+      }
+    }
+    toggleNavBar(0)
+  </script>
 </html>
