@@ -1,6 +1,8 @@
 body {
   margin: 0;
   font: 16px/1.5 'Work Sans', sans-serif;
+  background: gold url(../images/rafts.png) repeat;
+  background-size: 256px;
   color: #111;
 }
 
@@ -16,8 +18,8 @@ h3 { font-size: 1.73rem; }
 h2 { font-size: 2.07rem; }
 h1 { font-size: 2.49rem; }
 h1, h2, h3, h4, h5 {
-  color: #39cccc;
-  text-shadow: .1em .1em #01ff70;
+  color: #ff5700;
+  text-shadow: .1em .1em #a8ff00;
 }
 h1, h2, h3, h4, h5, p, ul, ol {
   margin: 0 0 1.5rem;
@@ -50,7 +52,7 @@ p:last-child {
   border-right: 1px solid;
 }
 .nav-bar > a:hover {
-  background-color: #39cccc;
+  background-color: #ff5700;
   color: rgba(0, 0, 0, .8);
   cursor: pointer;
 }
@@ -123,7 +125,7 @@ section.-right > .caption {
 }
 
 .hero-section > .title > .details {
-  background-color: #39cccc;
+  background-color: #ff5700;
   box-shadow: -1em 1em #01ff70;
   color: white;
   font-size: 2v;
