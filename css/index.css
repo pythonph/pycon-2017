@@ -1,14 +1,14 @@
 body {
   margin: 0;
   font: 16px/1.5 'Work Sans', sans-serif;
-  background: gold url(../images/rafts.png) repeat;
-  background-size: 256px;
+  background: gold url(../images/pineapples.png) center;
+  background-size: 200px;
   color: #111;
 }
 
 a {
+  color: #45a2db;
   display: inline-block;
-  color: white;
   text-decoration: none;
 }
 
@@ -18,8 +18,8 @@ h3 { font-size: 1.73rem; }
 h2 { font-size: 2.07rem; }
 h1 { font-size: 2.49rem; }
 h1, h2, h3, h4, h5 {
-  color: #ff5700;
-  text-shadow: .1em .1em #a8ff00;
+  color: #45a2db;
+  text-shadow: .1em .1em white;
 }
 h1, h2, h3, h4, h5, p, ul, ol {
   margin: 0 0 1.5rem;
@@ -29,16 +29,16 @@ p:last-child {
 }
 
 .nav-bar {
-  background-color: rgba(0, 0, 0, .8);
+  font-size: 1.44rem;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100vw;
+  right: 0;
+  width: 20vw;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
   transform: translateY(-100%);
   transition: transform ease-in-out .2s;
+  padding-top: 5vh;
 }
 
 .nav-bar.-visible {
@@ -52,24 +52,34 @@ p:last-child {
   border-right: 1px solid;
 }
 .nav-bar > a:hover {
-  background-color: #ff5700;
-  color: rgba(0, 0, 0, .8);
+  background-color: white;
   cursor: pointer;
 }
 .nav-bar > a[href=""] {
   opacity: .2;
 }
 
+section {
+  box-sizing: border-box;
+}
+
+section.-left,
+section.-right {
+  width: 80vw;
+}
+
 section.-left {
-  padding-right: 50%;
+  padding-right: 40vw;
+  transform: rotate(-1.5deg);
 }
 
 section.-right {
-  padding-left: 50%;
+  padding-left: 40vw;
+  transform: rotate(1.5deg);
 }
 
 section > .copy {
-  padding: 0 6rem;
+  padding: 0 3rem;
 }
 
 section > .copy.-centered {
@@ -79,57 +89,48 @@ section > .copy.-centered {
   justify-content: center;
 }
 
-section > .caption {
-  font-size: 0.8rem;
-  opacity: 0.8;
-  position: absolute;
-  bottom: 1.5rem;
-}
-
-section.-left > .caption {
-  left: calc(50vw + 1.5rem);
-}
-
-section.-right > .caption {
-  right: calc(50vw - 1.5rem);
-}
-
 .hero-section {
   position: relative;
-  background: url(../images/must.jpg) no-repeat 50vw center;
+  background: url(../images/cityscape.png) no-repeat center;
   background-size: cover;
 }
 
 .hero-section > .title {
-  min-height: 100vh;
+  font-weight: 800;
+  text-transform: uppercase;
+  min-height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 1;
-  text-transform: uppercase;
-  font-weight: 800;
-  margin-left: 8rem;
+  margin-left: 4rem;
 }
 
 .hero-section > .title > h1 {
   font-size: 8vw;
+  line-height: .8;
   margin: 0 0 0.2em;
-  text-indent: -8rem;
+  text-indent: -4rem;
+  text-shadow: .1em .1em gold;
+  transform: rotate(3deg);
 }
 
 .hero-section > .title > h1 > span {
+  font-size: 1.44em;
   position: relative;
   display: block;
-  font-size: 1.44em;
+  color: white;
+  transform: rotate(-6deg);
 }
 
 .hero-section > .title > .details {
-  background-color: #ff5700;
-  box-shadow: -1em 1em #01ff70;
-  color: white;
   font-size: 2v;
+  line-height: 1;
+  background-color: #45a2db;
+  box-shadow: -1em 1em gold;
+  color: white;
   padding: 1rem;
+  transform: rotate(1.5deg);
 }
 
 .hero-section > .title > .details > time {
@@ -137,14 +138,15 @@ section.-right > .caption {
 }
 
 .about-section {
-  background: url(../images/pyconph.jpg) no-repeat left center;
-  background-size: 50vw;
-  min-height: 66vw;
+  background: url(../images/pyconph.jpg) no-repeat left top;
+  background-size: 40vw;
+  min-height: 110vh;
+  margin-top: -5vh;
 }
 
 .volunteer-section {
-  min-height: 66vw;
-  background: url(../images/volunteers.gif) no-repeat 50vw top,
-              url(../images/volunteers.jpg) no-repeat 50vw 33vw;
-  background-size: 50vw;
+  background: url(../images/volunteers.gif) no-repeat 40vw top,
+              url(../images/volunteers.jpg) no-repeat 40vw 26vw;
+  background-size: 40vw;
+  min-height: 100vh;
 }
