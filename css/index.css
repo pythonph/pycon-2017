@@ -44,11 +44,11 @@ section > .copy {
 
 .hero-section > .title {
   background: url(../images/logo.svg) no-repeat left top;
-  background-size: 25vw;
+  background-size: 17.5vw;
   font-weight: 800;
   text-transform: uppercase;
   min-height: 100vh;
-  padding: 2rem 2rem 2rem 20vw;
+  padding: 2rem 2rem 2rem 15vw;
 }
 
 .hero-section > .title > h1 {
@@ -56,7 +56,6 @@ section > .copy {
   font-weight: 800;
   line-height: .8;
   margin: 0 0 0.2em;
-  text-indent: -4rem;
 }
 
 .hero-section > .title > h1 > span {
@@ -101,8 +100,8 @@ section > .copy {
 
 .coc-section > p {
   background: url(../images/shake.svg) no-repeat center top;
-  background-size: 5vw;
-  padding: 6rem 3rem 3rem;
+  background-size: 10vw;
+  padding: 12vw 3rem 3rem;
 }
 
 .coc-section > p > a {
