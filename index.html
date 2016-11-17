@@ -25,52 +25,65 @@
       </div>
     </div>
   </section>
-  <section id="about" class="about-section -right">
-    <div class="copy -centered">
-      <h2>What is PyCon PH?</h2>
-      <p>PyCon Philippines is a volunteer-run, not-for-profit conference centered around the Python Programming language.</p>
-      <p>The main goal of this conference is to provide a venue where the Python programming language and surrounding technologies can be explored, discussed and exercised.</p>
-      <p>We gather software engineers, programming enthusiasts, startup founders, corporate IT decision makers, students and IT educators in a 2-day event where we can collaborate and learn with each other.</p>
+  <section id="about" class="about-section">
+    <div class="copy">
+      <a class="js-toggle" href="#about"><h2>What is <strong>PyCon PH</strong>?</h2></a>
+      <div class="toggable js-toggable">
+	<p>PyCon Philippines is a volunteer-run, not-for-profit conference centered around the Python Programming language.</p>
+	<p>The goal of the conference is to provide a venue where the Python programming language and surrounding technologies can be explored, discussed and exercised.</p>
+      </div>
+    </div>
+    <div class="past-pycons">
+      <img src="./images/pyconph.jpg">
     </div>
   </section>
-  <section id="volunteer" class="volunteer-section -left">
-    <div class="copy -centered">
-      <h2>Volunteering is fun!</h2>
-      <p>PyCon Philippines is run by volunteers. The previous PyCons would not
-      have been successful without the help of these individuals.</p>
+  <section id="coc" class="coc-section">
+    <p>Attendees are expected to follow our <a href="#">Code of Conduct</a></p>
+  </section>
+  <section id="cfp" class="cfp-section">
+    <div class="copy">
+      <h2>Call for proposals</h2>
+      <p>Calling for speakers and workshops for PyConPH 2017! Our theme this year is <em>"The Python Ecosystem"</em>. If you have something interesting to share, we'd love to hear from you!</p>
+      <p>Deadline for proposals is on November 30, 2016.</p>
+      <p>
+	<a class="btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeI8K0z4kXCApKm9wu9E_D6sxeUSCATAoPC6IwP2sQsfUKXBQ/viewform">
+	  <img src="./images/plus.svg">Submit your proposal
+	</a>
+      </p>
     </div>
   </section>
-  <nav class="nav-bar">
-    <a href="#hero"><strong>PyCon PH 2017</strong></a>
-    <a href="#about">About</a>
-    <a href="">Venue</a>
-    <a href="">Speakers</a>
-    <a href="">Tickets</a>
-    <a class="typeform-share" href="https://marksteve.typeform.com/to/vqWkk4" data-mode="2" target="_blank">Sponsor</a>
-    <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
-    <a href="#volunteer">Volunteer</a>
-  </nav>
+  <section id="volunteer" class="volunteer-section">
+    <div class="copy">
+      <h2>Want to volunteer?</h2>
+      <p>PyCon Philippines is run by volunteers who are passionate with a
+      variety of things with Python being common.</p>
+      <p>We don't pay volunteers with cash but with fun memories and the feeling of accomplishing something noble and great.</p>
+      <p>
+	<a class="btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSf7qkaSBWSAFyMf9aVN7kP1E4LPKoOxrzf3ZsHa7japETSZUw/viewform">
+	  <img src="./images/heart.svg">Sign up
+	</a>
+      </p>
+    </div>
+  </section>
+  <section class="attrib-section">
+    Illustrations by <a href="https://www.behance.net/KevinPlaridel">Kevin Aton</a>
+    &mdash; Icons from <a href="https://thenounproject.com">The Noun Project</a>
+  </section>
+  <script src="./js/bliss.min.js"></script>
   <script>
-    var scrolling
-    document.addEventListener('scroll', function (e) {
-      var scrollPos = window.scrollY
-      if (!scrolling) {
-	window.requestAnimationFrame(function() {
-	  toggleNavBar(scrollPos)
-	  scrolling = false
-	})
+    $$('.js-toggle')._.events({
+      click: function (e) {
+	e.preventDefault()
+	$('.js-toggable', this.parentNode)
+	  .classList.toggle('-shown')
       }
-      scrolling = true
     })
-    var navBar = document.querySelector('.nav-bar')
-    var atTop = true
-    function toggleNavBar(pos) {
-      var nextAtTop = pos < window.innerHeight
-      if (nextAtTop !== atTop) {
-        atTop = nextAtTop
-	navBar.classList.toggle('-visible', !atTop)
-      }
-    }
-    toggleNavBar(0)
+    var y = 0
+    setInterval(function () {
+      y = (y + 25) % 100
+      $('.past-pycons > img')._.style({
+	transform: 'translateY(-' + y + '%)'
+      })
+    }, 3000)
   </script>
 </html>

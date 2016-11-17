@@ -1,9 +1,11 @@
 body {
   margin: 0;
-  font: 16px/1.5 'Work Sans', sans-serif;
-  background: gold url(../images/pineapples.png) center;
-  background-size: 200px;
-  color: #111;
+  font: 20px/1.5 'Work Sans', sans-serif;
+  background: #b6e0f7;
+  color: #45a2db;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 a {
@@ -12,141 +14,158 @@ a {
   text-decoration: none;
 }
 
-h5 { font-size: 1.2rem; }
-h4 { font-size: 1.44rem; }
-h3 { font-size: 1.73rem; }
-h2 { font-size: 2.07rem; }
-h1 { font-size: 2.49rem; }
+h5 { font-size: 1.4rem; }
+h4 { font-size: 1.96rem; }
+h3 { font-size: 2.74rem; }
+h2 { font-size: 3.84rem; }
+h1 { font-size: 5.38rem; }
 h1, h2, h3, h4, h5 {
   color: #45a2db;
-  text-shadow: .1em .1em white;
+  font-weight: normal;
 }
 h1, h2, h3, h4, h5, p, ul, ol {
   margin: 0 0 1.5rem;
-}
-p:last-child {
-  margin-bottom: 0;
-}
-
-.nav-bar {
-  font-size: 1.44rem;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 20vw;
-  display: flex;
-  flex-direction: column;
-  transform: translateY(-100%);
-  transition: transform ease-in-out .2s;
-  padding-top: 5vh;
-}
-
-.nav-bar.-visible {
-  transform: translateY(0);
-}
-
-.nav-bar > a {
-  flex: auto;
-  padding: 0 1em;
-  line-height: 2;
-  border-right: 1px solid;
-}
-.nav-bar > a:hover {
-  background-color: white;
-  cursor: pointer;
-}
-.nav-bar > a[href=""] {
-  opacity: .2;
 }
 
 section {
   box-sizing: border-box;
 }
 
-section.-left,
-section.-right {
-  width: 80vw;
-}
-
-section.-left {
-  padding-right: 40vw;
-  transform: rotate(-1.5deg);
-}
-
-section.-right {
-  padding-left: 40vw;
-  transform: rotate(1.5deg);
-}
-
 section > .copy {
   padding: 0 3rem;
 }
 
-section > .copy.-centered {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .hero-section {
+  width: 100vw;
   position: relative;
   background: url(../images/cityscape.png) no-repeat center;
   background-size: cover;
 }
 
 .hero-section > .title {
+  background: url(../images/logo.svg) no-repeat left top;
+  background-size: 25vw;
   font-weight: 800;
   text-transform: uppercase;
-  min-height: 110vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 4rem;
+  min-height: 100vh;
+  padding: 2rem 2rem 2rem 20vw;
 }
 
 .hero-section > .title > h1 {
   font-size: 8vw;
+  font-weight: 800;
   line-height: .8;
   margin: 0 0 0.2em;
   text-indent: -4rem;
-  text-shadow: .1em .1em gold;
-  transform: rotate(3deg);
 }
 
 .hero-section > .title > h1 > span {
-  font-size: 1.44em;
+  font-size: 1.5em;
   position: relative;
   display: block;
   color: white;
-  transform: rotate(-6deg);
 }
 
 .hero-section > .title > .details {
-  font-size: 2v;
+  font-size: 2vw;
   line-height: 1;
-  background-color: #45a2db;
-  box-shadow: -1em 1em gold;
+  background-color: rgba(69, 162, 219, 0.8);
   color: white;
   padding: 1rem;
-  transform: rotate(1.5deg);
+  width: 30vw;
 }
 
 .hero-section > .title > .details > time {
-  font-size: 1.44em;
+  font-size: 1.4rem;
 }
 
 .about-section {
-  background: url(../images/pyconph.jpg) no-repeat left top;
-  background-size: 40vw;
-  min-height: 110vh;
-  margin-top: -5vh;
+  background: white;
+  width: 70vw;
 }
 
+.about-section > .copy {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.coc-section {
+  background: #45a2db;
+  width: 30vw;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.coc-section > p {
+  background: url(../images/shake.svg) no-repeat center top;
+  background-size: 5vw;
+  padding: 6rem 3rem 3rem;
+}
+
+.coc-section > p > a {
+  color: inherit;
+  font-weight: bold;
+}
+
+.past-pycons {
+  overflow: hidden;
+  height: 23vw;
+}
+
+.past-pycons > img {
+  width: 100%;
+  transition: transform ease-in-out .6s;
+}
+
+.cfp-section,
 .volunteer-section {
-  background: url(../images/volunteers.gif) no-repeat 40vw top,
-              url(../images/volunteers.jpg) no-repeat 40vw 26vw;
-  background-size: 40vw;
-  min-height: 100vh;
+  background: white;
+  width: 48vw;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+  padding: 3rem 0;
+}
+
+.volunteer-section > .copy > h2,
+.cfp-section > .copy > h2 {
+  font-size: 2.74rem;
+}
+
+.attrib-section {
+  width: 100vw;
+  padding: 3rem;
+  text-align: center;
+}
+
+.attrib-section > a {
+  text-decoration: underline;
+}
+
+.toggable {
+  height: 5vh;
+  overflow: hidden;
+  transition: all ease-in-out .2s;
+  margin-top: -1.5rem;
+  opacity: 0.1;
+}
+
+.toggable.-shown {
+  height: 40vh;
+  margin-top: 0;
+  opacity: 1;
+}
+
+.btn {
+  background: #45a2db;
+  color: white;
+  padding: .75rem 1.5rem;
+}
+
+.btn > img {
+  height: 1.5em;
+  margin-right: .75em;
+  vertical-align: middle;
 }
