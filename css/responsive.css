@@ -1,0 +1,35 @@
+@media (max-width: 480px) {
+  h5 { font-size: 1.2rem; }
+  h4 { font-size: 1.44rem; }
+  h3 { font-size: 1.73rem; }
+  h2 { font-size: 2.07rem; }
+  h1 { font-size: 2.49rem; }
+  section {
+    width: 100vw !important;
+  }
+  .hero-section {
+    min-height: 30rem;
+    background-position: right bottom;
+  }
+  .hero-section > .title {
+    background-size: 45vw;
+    padding: 3rem 2rem 2rem 40vw;
+  }
+  .hero-section > .title > h1 {
+    font-size: 12vw;
+  }
+  .hero-section > .title > .details {
+    font-size: 4vw;
+    width: auto;
+  }
+  .about-section > .copy > h2 {
+    font-size: 1.73rem;
+  }
+  .coc-section {
+    height: 50vh;
+  }
+  .btn {
+    display: block;
+    box-sizing: border-box;
+  }
+}

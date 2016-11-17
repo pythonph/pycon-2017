@@ -26,6 +26,9 @@ h1, h2, h3, h4, h5 {
 h1, h2, h3, h4, h5, p, ul, ol {
   margin: 0 0 1.5rem;
 }
+p:last-child {
+  margin-bottom: 0;
+}
 
 section {
   box-sizing: border-box;
@@ -37,8 +40,9 @@ section > .copy {
 
 .hero-section {
   width: 100vw;
+  min-height: 100vh;
   position: relative;
-  background: url(../images/cityscape.png) no-repeat center;
+  background: url(../images/cityscape.png) no-repeat center bottom;
   background-size: cover;
 }
 
@@ -47,7 +51,6 @@ section > .copy {
   background-size: 17.5vw;
   font-weight: 800;
   text-transform: uppercase;
-  min-height: 100vh;
   padding: 2rem 2rem 2rem 15vw;
 }
 
@@ -75,7 +78,7 @@ section > .copy {
 }
 
 .hero-section > .title > .details > time {
-  font-size: 1.4rem;
+  font-size: 1.4em;
 }
 
 .about-section {
@@ -126,11 +129,6 @@ section > .copy {
   margin-top: 4vw;
   margin-bottom: 4vw;
   padding: 3rem 0;
-}
-
-.volunteer-section > .copy > h2,
-.cfp-section > .copy > h2 {
-  font-size: 2.74rem;
 }
 
 .attrib-section {
