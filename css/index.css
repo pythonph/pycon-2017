@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font: 20px/1.5 'Work Sans', sans-serif;
+  font: 16px/1.5 'Work Sans', sans-serif;
   background: #b6e0f7;
   color: #45a2db;
   display: flex;
@@ -55,7 +55,7 @@ section > .copy {
 }
 
 .hero-section > .title > h1 {
-  font-size: 8vw;
+  font-size: 5vw;
   font-weight: 800;
   line-height: .8;
   margin: 0 0 0.2em;
@@ -69,12 +69,12 @@ section > .copy {
 }
 
 .hero-section > .title > .details {
-  font-size: 2vw;
+  font-size: 1.2vw;
   line-height: 1;
   background-color: rgba(69, 162, 219, 0.8);
   color: white;
   padding: 1rem;
-  width: 30vw;
+  width: 17vw;
 }
 
 .hero-section > .title > .details > time {
@@ -87,8 +87,8 @@ section > .copy {
 }
 
 .about-section > .copy {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 
 .coc-section {
@@ -125,10 +125,10 @@ section > .copy {
 .cfp-section,
 .volunteer-section {
   background: white;
-  width: 48vw;
-  margin-top: 4vw;
-  margin-bottom: 4vw;
-  padding: 3rem 0;
+  width: 45vw;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  padding: 6rem 0;
 }
 
 .attrib-section {
