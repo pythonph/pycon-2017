@@ -32,9 +32,6 @@
       <p>PyCon Philippines is a volunteer-run, not-for-profit conference centered around the Python Programming language.</p>
       <p>The goal of the conference is to provide a venue where the Python programming language and surrounding technologies can be explored, discussed and exercised.</p>
     </div>
-    <div class="past-pycons">
-      <img src="./images/pyconph.jpg">
-    </div>
   </section>
   <section id="coc" class="coc-section">
     <p>Attendees are expected to follow our <a href="#">Code of Conduct</a></p>
@@ -64,25 +61,15 @@
       </p>
     </div>
   </section>
+  <section class="sponsorship-section">
+    <div class="copy">
+      <h3>Become our sponsor</h3>
+      <p>Interested in sponsoring? Check out our <a href="./assets/sponsorship.pdf">Sponsorship Packages.</a></p>
+    </div>
+  </section>
   <section class="attrib-section">
     Illustrations by <a href="https://www.behance.net/KevinPlaridel">Kevin Aton</a>
     &mdash; Icons from <a href="https://thenounproject.com">The Noun Project</a>
   </section>
   <script src="./js/bliss.min.js"></script>
-  <script>
-    $$('.js-toggle')._.events({
-      click: function (e) {
-	e.preventDefault()
-	$('.js-toggable', this.parentNode)
-	  .classList.toggle('-shown')
-      }
-    })
-    var y = 0
-    setInterval(function () {
-      y = (y + 25) % 100
-      $('.past-pycons > img')._.style({
-	transform: 'translateY(-' + y + '%)'
-      })
-    }, 3000)
-  </script>
 </html>

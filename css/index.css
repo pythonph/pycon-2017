@@ -1,17 +1,16 @@
 body {
   margin: 0;
   font: 16px/1.5 'Work Sans', sans-serif;
-  background: #b6e0f7;
   color: #45a2db;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 a {
   color: #45a2db;
   display: inline-block;
-  text-decoration: none;
 }
 
 h5 { font-size: 1.4rem; }
@@ -44,6 +43,7 @@ section > .copy {
   position: relative;
   background: url(../images/cityscape.png) no-repeat center bottom;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .hero-section > .title {
@@ -82,7 +82,6 @@ section > .copy {
 }
 
 .about-section {
-  background: white;
   width: 70vw;
 }
 
@@ -96,9 +95,7 @@ section > .copy {
   width: 30vw;
   text-align: center;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 6rem 0;
 }
 
 .coc-section > p {
@@ -112,19 +109,13 @@ section > .copy {
   font-weight: bold;
 }
 
-.past-pycons {
-  overflow: hidden;
-  height: 23vw;
-}
-
-.past-pycons > img {
-  width: 100%;
-  transition: transform ease-in-out .6s;
+.sponsorship-section {
+  width: 100vw;
+  margin: 6rem 0;
 }
 
 .cfp-section,
 .volunteer-section {
-  background: white;
   width: 45vw;
   margin-top: 6rem;
   margin-bottom: 6rem;
@@ -141,24 +132,11 @@ section > .copy {
   text-decoration: underline;
 }
 
-.toggable {
-  height: 5vh;
-  overflow: hidden;
-  transition: all ease-in-out .2s;
-  margin-top: -1.5rem;
-  opacity: 0.1;
-}
-
-.toggable.-shown {
-  height: 40vh;
-  margin-top: 0;
-  opacity: 1;
-}
-
 .btn {
   background: #45a2db;
   color: white;
   padding: .75rem 1.5rem;
+  text-decoration: none;
 }
 
 .btn > img {
