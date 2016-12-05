@@ -2,10 +2,8 @@ body {
   margin: 0;
   font: 16px/1.5 'Work Sans', sans-serif;
   color: #45a2db;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  background: #45a2db url(../images/cityscape.png) no-repeat center top;
+  background-size: contain;
 }
 
 a {
@@ -33,48 +31,38 @@ section {
   box-sizing: border-box;
 }
 
-section > .copy {
-  padding: 0 3rem;
-}
-
 .hero-section {
   width: 100vw;
-  min-height: 100vh;
-  position: relative;
-  background: url(../images/cityscape.png) no-repeat center bottom;
-  background-size: cover;
-  background-attachment: fixed;
+  height: 72vw;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-section > .title {
   background: url(../images/logo.svg) no-repeat left top;
-  background-size: 17.5vw;
-  font-weight: 800;
+  background-size: 20vw;
   text-transform: uppercase;
-  padding: 2rem 2rem 2rem 15vw;
+  padding-left: 18vw;
+  padding-top: 3vw;
+  margin-top: 5vw;
+  margin-left: -9vw;
 }
 
 .hero-section > .title > h1 {
   font-size: 5vw;
-  font-weight: 800;
   line-height: .8;
-  margin: 0 0 0.2em;
 }
 
 .hero-section > .title > h1 > span {
   font-size: 1.5em;
+  font-weight: bold;
   position: relative;
   display: block;
-  color: white;
 }
 
 .hero-section > .title > .details {
   font-size: 1.2vw;
   line-height: 1;
-  background-color: rgba(69, 162, 219, 0.8);
-  color: white;
-  padding: 1rem;
-  width: 17vw;
 }
 
 .hero-section > .title > .details > time {
@@ -82,50 +70,49 @@ section > .copy {
 }
 
 .about-section {
-  width: 70vw;
+  height: 28vw;
+  color: #4f9991;
+  display: flex;
+  justify-content: center;
 }
 
 .about-section > .copy {
-  padding-top: 12rem;
-  padding-bottom: 12rem;
+  width: 40rem;
 }
 
-.coc-section {
-  background: #45a2db;
-  width: 30vw;
+.about-section > .copy > h3 {
+  color: #4f9991;
   text-align: center;
+}
+
+.calls-section {
   color: white;
-  padding: 6rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 9rem 6rem;
 }
 
-.coc-section > p {
-  background: url(../images/shake.svg) no-repeat center top;
-  background-size: 10vw;
-  padding: 12vw 3rem 3rem;
+.calls-section h3,
+.calls-section a {
+  color: white;
 }
 
-.coc-section > p > a {
-  color: inherit;
-  font-weight: bold;
+.calls-section > .col {
+  box-sizing: border-box;
+  width: calc(50vw - 9rem);
 }
 
-.sponsorship-section {
-  width: 100vw;
-  margin: 6rem 0;
-}
-
-.cfp-section,
-.volunteer-section {
-  width: 45vw;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-  padding: 6rem 0;
+.volunteers-section {
+  background: white url(../images/volunteers.gif) no-repeat 50vw center;
+  background-size: 40vw;
+  padding: 6rem 50vw 6rem 6rem;
 }
 
 .attrib-section {
-  width: 100vw;
-  padding: 3rem;
-  text-align: center;
+  padding: 6rem;
+  text-align: right;
+  background: white;
 }
 
 .attrib-section > a {
@@ -133,6 +120,8 @@ section > .copy {
 }
 
 .btn {
+  border: 1px solid;
+  border-radius: 3rem;
   background: #45a2db;
   color: white;
   padding: .75rem 1.5rem;
@@ -144,3 +133,4 @@ section > .copy {
   margin-right: .75em;
   vertical-align: middle;
 }
+
