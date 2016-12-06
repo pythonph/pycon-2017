@@ -1,9 +1,8 @@
 body {
   margin: 0;
   font: 16px/1.5 'Work Sans', sans-serif;
+  background: #45a2db;
   color: #45a2db;
-  background: #45a2db url(../images/cityscape.png) no-repeat center top;
-  background-size: contain;
 }
 
 a {
@@ -26,16 +25,17 @@ h1, h2, h3, h4, h5, p, ul, ol {
 p:last-child {
   margin-bottom: 0;
 }
-
 section {
   box-sizing: border-box;
 }
 
 .hero-section {
-  width: 100vw;
-  height: 72vw;
+  background: #8fe0db url(../images/cityscape.png) no-repeat center top;
+  background-size: contain;
+  min-height: 100vw;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .hero-section > .title {
@@ -46,22 +46,21 @@ section {
   padding-top: 3vw;
   margin-top: 5vw;
   margin-left: -9vw;
+  margin-bottom: 30vw;
+  box-sizing: border-box;
 }
 
 .hero-section > .title > h1 {
-  font-size: 5vw;
   line-height: .8;
 }
 
 .hero-section > .title > h1 > span {
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: bold;
-  position: relative;
   display: block;
 }
 
 .hero-section > .title > .details {
-  font-size: 1.2vw;
   line-height: 1;
 }
 
@@ -69,18 +68,19 @@ section {
   font-size: 1.4em;
 }
 
-.about-section {
-  height: 28vw;
+.hero-section > .about {
+  box-sizing: border-box;
   color: #4f9991;
   display: flex;
   justify-content: center;
+  width: 100vw;
 }
 
-.about-section > .copy {
-  width: 40rem;
+.hero-section > .about > .copy {
+  max-width: 40rem;
 }
 
-.about-section > .copy > h3 {
+.hero-section > .about > .copy > h3 {
   color: #4f9991;
   text-align: center;
 }
@@ -100,7 +100,7 @@ section {
 
 .calls-section > .col {
   box-sizing: border-box;
-  width: calc(50vw - 9rem);
+  max-width: calc(50vw - 9rem);
 }
 
 .volunteers-section {

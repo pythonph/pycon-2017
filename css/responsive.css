@@ -1,35 +1,44 @@
-@media (max-width: 480px) {
+@media (max-width: 720px) {
   h5 { font-size: 1.2rem; }
   h4 { font-size: 1.44rem; }
   h3 { font-size: 1.73rem; }
   h2 { font-size: 2.07rem; }
   h1 { font-size: 2.49rem; }
-  section {
-    width: 100vw !important;
-  }
   .hero-section {
-    min-height: 30rem;
-    background-position: right bottom;
+    min-height: 120vh;
+    background-position: right top;
+    background-size: 120vh;
   }
   .hero-section > .title {
-    background-size: 45vw;
-    padding: 3rem 2rem 2rem 40vw;
+    background-position: 1.5rem top;
+    background-size: 40vw;
+    padding-left: 40vw;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+    margin-bottom: 80vw;
   }
   .hero-section > .title > h1 {
     font-size: 12vw;
   }
   .hero-section > .title > .details {
     font-size: 4vw;
-    width: auto;
   }
-  .about-section > .copy > h2 {
-    font-size: 1.73rem;
+  .hero-section > .about {
+    padding: 3rem;
   }
-  .coc-section {
-    height: 50vh;
+  .calls-section {
+    padding: 3rem;
   }
-  .btn {
-    display: block;
-    box-sizing: border-box;
+  .calls-section > .col {
+    max-width: 100vw;
+    margin-bottom: 3rem;
+  }
+  .volunteers-section {
+    padding: 70vw 3rem 3rem;
+    background-position: center 3rem;
+    background-size: calc(100vw - 6rem);
+  }
+  .attrib-section {
+    padding: 3rem;
   }
 }
