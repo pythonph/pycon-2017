@@ -16,7 +16,6 @@ h3 { font-size: 2.74rem; }
 h2 { font-size: 3.84rem; }
 h1 { font-size: 5.38rem; }
 h1, h2, h3, h4, h5 {
-  color: #45a2db;
   font-weight: normal;
 }
 h1, h2, h3, h4, h5, p, ul, ol {
@@ -81,8 +80,46 @@ section {
 }
 
 .hero-section > .about > .copy > h3 {
-  color: #4f9991;
   text-align: center;
+}
+
+.speakers-section {
+  background: #FFE824;
+  color: #3C313B;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 9rem 6rem;
+}
+
+.speakers-intro {
+  flex: 1;
+  margin-right: 3rem;
+}
+
+.speakers-list {
+  flex: 2;
+}
+
+.speaker-info {
+  border: 1px solid;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.speaker-info > .name {
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.speaker-info > .photo {
+  border: 1px solid;
+  width: 10rem;
+}
+
+.speakers-more {
+  font-size: 1.414em;
+  margin-top: 3rem;
 }
 
 .calls-section {
@@ -93,7 +130,6 @@ section {
   padding: 9rem 6rem;
 }
 
-.calls-section h3,
 .calls-section a {
   color: white;
 }
@@ -106,7 +142,7 @@ section {
 .volunteers-section {
   background: white url(../images/volunteers.gif) no-repeat 50vw center;
   background-size: 40vw;
-  padding: 6rem 50vw 6rem 6rem;
+  padding: 6rem 55vw 6rem 6rem;
 }
 
 .attrib-section {
