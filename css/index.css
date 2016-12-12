@@ -1,12 +1,12 @@
 body {
   margin: 0;
   font: 16px/1.5 'Work Sans', sans-serif;
-  background: #45a2db;
-  color: #45a2db;
+  background: white;
+  color: #00095C;
 }
 
 a {
-  color: #45a2db;
+  color: #00095C;
   display: inline-block;
 }
 
@@ -69,7 +69,7 @@ section {
 
 .hero-section > .about {
   box-sizing: border-box;
-  color: #4f9991;
+  color: #185854;
   display: flex;
   justify-content: center;
   width: 100vw;
@@ -81,6 +81,84 @@ section {
 
 .hero-section > .about > .copy > h3 {
   text-align: center;
+}
+
+.testimonials-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 9rem 6rem;
+}
+
+.testimonials-section > h2 {
+  font-size: 2.74rem;
+}
+
+.testimonial-chat {
+  width: 50vw;
+  margin-bottom: 3rem;
+}
+
+.testimonial-chat > .bubble {
+  background: #EFF6F9;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.testimonial-chat > .byline {
+  padding-top: 1.5rem;
+  font-size: 1.414em;
+  position: relative;
+}
+
+.testimonial-chat > .byline:after {
+  display: block;
+  content: ' ';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+}
+
+.testimonial-chat.-left > .byline {
+  text-align: left;
+  margin-left: 3rem;
+  padding-left: 3rem;
+}
+
+.testimonial-chat.-left > .byline:after {
+  border-top: 1rem solid #EFF6F9;
+  border-right: 1rem solid #EFF6F9;
+  border-left: 1rem solid transparent;
+  border-bottom: 1rem solid transparent;
+  left: 0;
+}
+
+.testimonial-chat.-right > .byline {
+  text-align: right;
+  margin-right: 3rem;
+  padding-right: 3rem;
+}
+
+.testimonial-chat.-right > .byline:after {
+  border-top: 1rem solid #EFF6F9;
+  border-left: 1rem solid #EFF6F9;
+  border-right: 1rem solid transparent;
+  border-bottom: 1rem solid transparent;
+  right: 0;
+}
+
+.testimonial-chat > .byline > .photo {
+  width: 5rem;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.testimonial-chat > .byline > .name {
+  vertical-align: middle;
+  display: inline-block;
+  text-align: left;
+  line-height: 1;
 }
 
 .speakers-section {
@@ -102,9 +180,9 @@ section {
 }
 
 .speaker-info {
-  border: 1px solid;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid;
+  margin-bottom: 3rem;
 }
 
 .speaker-info > .name {
@@ -123,6 +201,7 @@ section {
 }
 
 .calls-section {
+  background: #00095C;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -158,7 +237,7 @@ section {
 .btn {
   border: 1px solid;
   border-radius: 3rem;
-  background: #45a2db;
+  background: #00095C;
   color: white;
   padding: .75rem 1.5rem;
   text-decoration: none;
