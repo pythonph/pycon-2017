@@ -26,6 +26,21 @@
   .hero-section > .about {
     padding: 3rem;
   }
+  .testimonials-section {
+    padding: 3rem;
+  }
+  .testimonials-section > h2 {
+    line-height: 1;
+  }
+  .testimonial-chat {
+    width: 100%;
+  }
+  .speakers-section {
+    padding: 3rem;
+  }
+  .speakers-intro {
+    margin-bottom: 3rem;
+  }
   .calls-section {
     padding: 3rem;
   }
