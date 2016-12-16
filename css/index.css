@@ -67,6 +67,10 @@ section {
   font-size: 1.4em;
 }
 
+.hero-section > .title > .details > p > .btn {
+  border: 0;
+}
+
 .hero-section > .about {
   box-sizing: border-box;
   color: #185854;
