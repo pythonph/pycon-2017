@@ -217,21 +217,11 @@ section {
   padding: 9rem 6rem;
 }
 
-.sponsors-section > .sponsors h2,h3,h4,a {
+/*.sponsors-section > .sponsors h2,h3,h4,a {
   text-align: center;
   display: block;
   margin: 0 auto;
-}
-
-
-.hero-section {
-  background: #8fe0db url(../images/cityscape.png) no-repeat center top;
-  background-size: contain;
-  min-height: 100vw;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+}*/
 
 .calls-section {
   background: #00095C;
