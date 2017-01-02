@@ -204,6 +204,12 @@ section {
   margin-top: 3rem;
 }
 
+.sponsors-section {
+  background: white;
+  padding: 9rem 6rem;
+}
+
+
 .calls-section {
   background: #00095C;
   color: white;
