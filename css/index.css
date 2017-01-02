@@ -204,6 +204,19 @@ section {
   margin-top: 3rem;
 }
 
+.organizer-logo {
+  vertical-align: middle;
+}
+
+.organizers {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+#organizers{
+  text-align: center;
+}
+
 .sponsors-section {
   background: white;
   display: flex;
