@@ -269,13 +269,23 @@ section {
   padding: 9rem 6rem;
 }
 
+.coc-intro {
+  flex: 1;
+  margin-right: 3rem;
+}
+
+.coc-content {
+  flex: 2;
+}
+
 .coc-section a {
   color: white;
 }
 
-.coc-section > .col {
-  box-sizing: border-box;
-  max-width: calc(50vw - 9rem);
+.coc-info {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid;
+  margin-bottom: 3rem;
 }
 
 .attrib-section {
