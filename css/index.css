@@ -260,6 +260,24 @@ section {
   padding: 6rem 55vw 6rem 6rem;
 }
 
+.coc-section {
+  background: #00095C;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 9rem 6rem;
+}
+
+.coc-section a {
+  color: white;
+}
+
+.coc-section > .col {
+  box-sizing: border-box;
+  max-width: calc(50vw - 9rem);
+}
+
 .attrib-section {
   padding: 6rem;
   text-align: right;
