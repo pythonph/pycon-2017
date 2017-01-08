@@ -40,7 +40,7 @@
   </section>
   <section class="testimonials-section">
     <h2>What do people <strong>say about</strong> PyCon PH?</h2>
-    <div class="testimonial-chat -left">
+    <div class="testimonial-chat -left" id="testimonials">
       <div class="bubble">
 	The community in the Phillipines is amazingly welcoming and passionate. I met a large group of wonderful people, from the organizers, volunteers, speakers and attendees. I've gone to Pycons all over the world, and I'm always impressed that the Python community seems to attract such good natured and kind hearted people in all corners.
       </div>
@@ -98,8 +98,17 @@
       </div>
     </div>
   </section>
+
   <section class="sponsors-section">
     <div class="sponsors" id="sponsors">
+      <div class="organizers">
+        <h4>PyCon PH 2017 is brought to you by</h4>
+        <div id="organizers">
+          <a href="https://python.ph"><img class="organizer-logo" src="./images/logo.svg" width="160"></a>
+          <a href="http://www.must.edu.ph"><img class="organizer-logo" src="./images/ustp.jpg" width="160"></a>
+        </div>
+      </div>
+
       <h3><strong>Our Sponsors</strong></h3>
       <p>PyCon Philippines has always been made possible with the help of our generous sponsors</p>
       <h4><strong>Elite Sponsors</strong></h4>
@@ -116,42 +125,86 @@
   </section>
 
   <section id="calls" class="calls-section">
-    <div class="col">
-      <h3>Call for <strong>proposals</strong></h3>
-      <p>Calling for speakers and workshops for PyConPH 2017! Our theme this year is <em>"The Python Ecosystem"</em>. If you have something interesting to share, we'd love to hear from you!</p>
-      <p>Deadline for proposals is on November 30, 2016.</p>
-      <p>
-	<a class="btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeI8K0z4kXCApKm9wu9E_D6sxeUSCATAoPC6IwP2sQsfUKXBQ/viewform">
-	  <img src="./images/plus.svg">Submit your proposal
-	</a>
-      </p>
-    </div>
-    <div class="col">
+    <div class="col" id="become-a-sponsor">
       <h3>Become our <strong>sponsor</strong></h3>
+      <p>We are seeking sponsors to help offset the costs of running the conference. Sponsorship allows us to keep ticket prices low.</p>
       <p>Our organization don't have much money-making facilities since we're
       non-profit. So we're very thankful for the sponsors who've helped us out
       over the past few years. PyCon PH is a great venue to meet great talents
       and interesting personalities. These people and visibility pull in companies and teams to
       support us.</p>
       <p>
-	<a class="btn" href="./assets/sponsorship.pdf">
-	  <img src="./images/charity.svg">Sponsorship Packages
-	</a>
+        <a class="btn" href="./assets/sponsorship.pdf">
+          <img src="./images/charity.svg">View Sponsorship Packages
+        </a>
+      </p>
+    </div>
+    <div class="col" id="become-a-patron">
+      <h3>Become a <strong>patron</strong></h3>
+      <p>Historically, we received an early donation from an anonymous individual that made a huge impact on making the very first PyCon Philippines (2012) possible. For this, we are truly grateful.</p>
+      <p>In the spirit of <em><a href="http://en.wikipilipinas.org/index.php/Bayanihan">Bayanihan</a></em>, individuals may make a personal donation of any amount. Your name and link will be listed on this website or if you prefer, you can be listed as 'Anonymous Patron'.</p>
+      <p>In addition, Patrons with a minimum donation of PHP 1,000 will have an opportunity to join the contributors dinner on day 2 for a fee.</p>
+      <p>If you'd like to make a personal donation of any amount, use this button:</p>
+      <p>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="PQ2LNCPGWXVWQ">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+<!--         <a class="btn" target="_blank" href="">
+          <img src="./images/charity.svg">Make a Donation
+        </a> -->
       </p>
     </div>
   </section>
   <section class="volunteers-section">
-    <h3>Want to <strong>volunteer</strong>?</h3>
-    <p>PyCon Philippines is run by volunteers who are passionate with a
-    variety of things with Python being common.</p>
-    <p>We don't pay volunteers with cash but with fun memories and the feeling of accomplishing something noble and great.</p>
-    <p>
-      <a class="btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSf7qkaSBWSAFyMf9aVN7kP1E4LPKoOxrzf3ZsHa7japETSZUw/viewform">
-	<img src="./images/heart.svg">Sign up
-      </a>
-    </p>
+    <div class="col" id="volunteer">
+      <h3>Want to <strong>volunteer</strong>?</h3>
+      <p>PyCon Philippines is run by volunteers who are passionate with a
+      variety of things with Python being common.</p>
+      <p>We don't pay volunteers with cash but with fun memories and the feeling of accomplishing something noble and great.</p>
+      <p>
+        <a class="btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSf7qkaSBWSAFyMf9aVN7kP1E4LPKoOxrzf3ZsHa7japETSZUw/viewform">
+        <img src="./images/heart.svg">Sign up
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <section id="coc" class="coc-section">
+    <div class="coc-intro" id="code-of-conduct">
+      <h4><strong>Code of Conduct</strong></h4>
+      <p>PyCon PH is a community conference intended for collaboration in the developer community.</p>
+
+      <p>We value the participation of each member of the Python community and want all attendees to have an enjoyable and fulfilling experience. Accordingly, all attendees are expected to show respect and courtesy to other attendees throughout the conference and at all conference events, whether officially sponsored by Python.PH or not.</p>
+
+      <p>To make clear what is expected, all delegates/attendees, speakers, exhibitors, organizers and volunteers at any PyCon event are required to conform to the following Code of Conduct. Organizers will enforce this code throughout the event.</p>
+    </div>
+    <div class="coc-content">
+      <h4>The long version</h4>
+      <p>Harassment includes offensive verbal comments related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, religion, status, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.</p>
+
+      <p>Participants who are asked to stop any harassing behavior are expected to comply immediately.</p>
+      <p>Be careful in the words that you choose. Remember that sexist, racist, and other exclusionary jokes can be offensive to those around you. Excessive swearing and offensive jokes are not appropriate for PyCon.</p>
+      <p>Exhibitors in the expo hall, sponsor or vendor booths, or similar activities are also subject to the anti-harassment policy. In particular, exhibitors should not use sexualized images, activities, or other material. Booth staff (including volunteers) should not use sexualized clothing/uniforms/costumes, or otherwise create a sexualized environment.</p>
+
+      <p>If a participant engages in harassing behavior, the conference organizers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund. If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately.</p>
+
+      <p>Conference staff can be identified by t-shirts/special badges/head sets.</p>
+
+      <p>Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.</p>
+
+      <p>We expect participants to follow these rules at all conference venues and conference-related social events.</p>
+
+      <h4>License</h4>
+
+      <p>This Code of Conduct is based on the <a href="https://us.pycon.org/2015/about/code-of-conduct/">PyCon US 2015 CoC</a>, and is licensed under a <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License.</a></p>
+    </div>
+
   </section>
   <section class="attrib-section">
+    Attendees are expected to follow our <a href="#coc">Code of Conduct</a><br>
     Organized by <a href="https://python.ph">Python.PH, Inc.</a><br>
     Illustrations by <a href="https://www.behance.net/KevinPlaridel">Kevin Aton</a><br>
     Icons from <a href="https://thenounproject.com">The Noun Project</a>
