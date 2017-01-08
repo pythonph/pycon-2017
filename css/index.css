@@ -230,11 +230,11 @@ section {
   padding: 9rem 6rem;
 }
 
-/*.sponsors-section > .sponsors h2,h3,h4,a {
+.sponsors-section > .sponsors > h2,h3,h4,a {
   text-align: center;
   display: block;
   margin: 0 auto;
-}*/
+}
 
 .calls-section {
   background: #00095C;
