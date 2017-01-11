@@ -111,7 +111,7 @@ section {
 
 .testimonial-chat > .byline {
   padding-top: 1.5rem;
-  font-size: 1.414em;
+  font-size: 1.4em;
   position: relative;
 }
 
@@ -171,7 +171,7 @@ section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 9rem 6rem;
+  padding: 9rem 6rem 0;
 }
 
 .speakers-intro {
@@ -200,7 +200,49 @@ section {
 }
 
 .speakers-more {
-  font-size: 1.414em;
+  font-size: 1.4em;
+  margin-top: 3rem;
+}
+
+.topics-section {
+  background: #FFE824;
+  color: #3C313B;
+  padding: 9rem 6rem;
+}
+
+.topics-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topics-list > .col {
+  flex: 1;
+  margin-right: 1.5rem;
+}
+
+.topics-list > .col:last-child {
+  margin-right: 0;
+}
+
+.topic-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.topic-info > h3 {
+  margin-right: 1.5rem;
+  font-size: 1.4rem;
+  flex: 2;
+}
+
+.topic-info > p {
+  flex: 1;
+}
+
+.topics-more {
+  text-align: center;
+  font-size: 1.4em;
   margin-top: 3rem;
 }
 
@@ -213,7 +255,7 @@ section {
   padding-bottom: 100px;
 }
 
-#organizers{
+#organizers {
   text-align: center;
 }
 
@@ -229,12 +271,6 @@ section {
   max-width: 40rem;
   padding: 9rem 6rem;
 }
-
-/*.sponsors-section > .sponsors > h2,h3,h4,a {
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-}*/
 
 .calls-section {
   background: #00095C;

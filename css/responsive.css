@@ -53,6 +53,12 @@
     background-position: center 3rem;
     background-size: calc(100vw - 6rem);
   }
+  .coc-section {
+    padding: 3rem;
+  }
+  .coc-content {
+    margin-top: 1.5rem;
+  }
   .attrib-section {
     padding: 3rem;
   }
