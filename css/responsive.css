@@ -41,6 +41,19 @@
   .speakers-intro {
     margin-bottom: 3rem;
   }
+  .topics-section {
+    padding: 3rem;
+  }
+  .topics-list {
+    display: block;
+  }
+  .topic-info {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+  .topic-info > h3 {
+    margin-bottom: 0;
+  }
   .calls-section {
     padding: 3rem;
   }
