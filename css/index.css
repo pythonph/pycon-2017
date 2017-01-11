@@ -246,30 +246,48 @@ section {
   margin-top: 3rem;
 }
 
-.organizer-logo {
-  vertical-align: middle;
-}
-
-.organizers {
-  text-align: center;
-  padding-bottom: 100px;
-}
-
-#organizers {
-  text-align: center;
-}
-
 .sponsors-section {
   background: white;
+  padding: 6rem;
+}
+
+.sponsors-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 
-.sponsors-section > .sponsors {
-  width: 100vw;
-  max-width: 40rem;
-  padding: 9rem 6rem;
+.sponsors-list > .sponsor {
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding: 1.5rem 0;
+}
+
+.sponsors-list > .sponsor > a {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.sponsors-list > .sponsor > a > img {
+  width: 100%;
+}
+
+.sponsors-list > .sponsor.-organizer {
+  width: 50%;
+}
+
+.sponsors-list > .sponsor.-elite {
+  width: 33%;
+}
+
+.sponsors-list > .sponsor.-premium {
+  width: 25%;
+}
+
+.sponsors-list > .sponsor.-ticket {
+  width: 10%;
 }
 
 .calls-section {

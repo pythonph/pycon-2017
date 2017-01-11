@@ -54,6 +54,13 @@
   .topic-info > h3 {
     margin-bottom: 0;
   }
+  .sponsors-section {
+    text-align: center;
+    padding: 3rem;
+  }
+  .sponsors-list > .sponsor {
+    width: 100% !important;
+  }
   .calls-section {
     padding: 3rem;
   }
