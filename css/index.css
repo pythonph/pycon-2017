@@ -279,14 +279,22 @@ section {
 }
 
 .sponsors-list > .sponsor.-elite {
-  width: 33%;
+  width: 60%;
 }
 
 .sponsors-list > .sponsor.-premium {
-  width: 25%;
+  width: 30%;
+}
+
+.sponsors-list > .sponsor.-starter {
+  width: 20%;
 }
 
 .sponsors-list > .sponsor.-ticket {
+  width: 10%;
+}
+
+.sponsors-list > .partner {
   width: 10%;
 }
 
