@@ -290,12 +290,8 @@ section {
   width: 20%;
 }
 
-.sponsors-list > .sponsor.-ticket {
-  width: 10%;
-}
-
-.sponsors-list > .partner {
-  width: 10%;
+.sponsors-list > .sponsor {
+  width: 15%;
 }
 
 .calls-section {
