@@ -264,12 +264,13 @@ section {
   padding: 1.5rem 0;
 }
 
+/*
 .sponsors-list > .sponsor > a {
   display: flex;
   height: 100%;
   align-items: center;
 }
-
+*/
 .sponsors-list > .sponsor > a > img {
   width: 100%;
 }
@@ -278,7 +279,13 @@ section {
   width: 50%;
 }
 
-.sponsors-list > .sponsor.-elite {
+.sponsors-list > .sponsor.-organizer > a {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+/*.sponsors-list > .sponsor.-elite {
   width: 60%;
 }
 
@@ -289,14 +296,46 @@ section {
 .sponsors-list > .sponsor.-starter {
   width: 20%;
 }
-
-.sponsors-list > .sponsor.-ticket {
+*/
+/*.sponsors-list > .sponsor.-ticket {
   width: 10%;
 }
 
 .sponsors-list > .partner {
   width: 10%;
+}*/
+
+.partners-section {
+  background: white;
+  padding: 6rem;
 }
+
+.partners-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.partners-list > .partner {
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding: 1.5rem 0;
+}
+
+.partners-list > h3 {
+  width: 100%;
+}
+
+.partners-list > .partner {
+  width: 100%;
+}
+
+.partners-list > .partner > a {
+  width: 20%;
+  padding: 1.5rem 0;
+}
+
 
 .calls-section {
   background: #00095C;
