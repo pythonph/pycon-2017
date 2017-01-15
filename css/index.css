@@ -283,15 +283,19 @@ section {
 }
 
 .sponsors-list > .sponsor.-elite {
-  width: 50%;
+  width: 45%;
 }
 
 .sponsors-list > .sponsor.-premium {
-  width: 40%;
+  width: 30%;
 }
 
 .sponsors-list > .sponsor.-starter {
-  width: 30%;
+  width: 20%;
+}
+
+.sponsors-list > .sponsor.-ticket {
+  width: 15%;
 }
 
 .sponsors-list > .sponsor {
