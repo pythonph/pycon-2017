@@ -266,16 +266,16 @@ section {
 
 .sponsors-list > .sponsor > a {
   display: flex;
-  height: 100%;
+  height: 90%;
   align-items: center;
 }
 
 .sponsors-list > .sponsor > span {
-  width: 100%;
+  width: 90%;
 }
 
 .sponsors-list > .sponsor > a > img {
-  width: 100%;
+  width: 90%;
 }
 
 .sponsors-list > .sponsor.-organizer {
@@ -291,15 +291,15 @@ section {
 }
 
 .sponsors-list > .sponsor.-starter {
-  width: 20%;
+  width: 25%;
 }
 
 .sponsors-list > .sponsor.-ticket {
-  width: 15%;
+  width: 20%;
 }
 
 .sponsors-list > .sponsor {
-  width: 15%;
+  width: 20%;
 }
 
 .calls-section {
