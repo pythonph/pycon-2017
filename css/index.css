@@ -267,20 +267,7 @@ section {
   margin-bottom: 1.5rem;
   position: relative;
   padding: 1.5rem 0;
-}
-
-.sponsors-list > .sponsor > a {
-  display: flex;
-  height: 90%;
-  align-items: center;
-}
-
-.sponsors-list > .sponsor > span {
-  width: 90%;
-}
-
-.sponsors-list > .sponsor > a > img {
-  width: 90%;
+  position: relative;
 }
 
 .sponsors-list > .sponsor.-organizer {
@@ -305,6 +292,29 @@ section {
 
 .sponsors-list > .sponsor {
   width: 20%;
+}
+
+.sponsors-list > .sponsor > a {
+  display: flex;
+  height: 90%;
+  align-items: center;
+}
+
+.sponsors-list > .sponsor > a > img {
+  width: 100%;
+}
+
+.sponsors-list > .sponsor > .description {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background: white;
+  padding: 3rem;
+  margin: 0 -3rem;
+}
+
+.sponsors-list > .sponsor:hover > .description {
+  display: block;
 }
 
 .calls-section {
