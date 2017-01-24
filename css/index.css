@@ -88,10 +88,14 @@ section {
 }
 
 .testimonials-section {
+  background: -webkit-linear-gradient(top, #8fe0db, #ffe824);
+  background: -moz-linear-gradient(top, #8fe0db, #ffe824);
+  background: -ms-linear-gradient(top, #8fe0db, #ffe824);
+  background: -o-linear-gradient(top, #8fe0db, #ffe824);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 9rem 6rem;
+  padding: 24rem 6rem 9rem;
 }
 
 .testimonials-section > h2 {
@@ -156,6 +160,7 @@ section {
   width: 5rem;
   border-radius: 50%;
   vertical-align: middle;
+  margin-right: 0.5rem;
 }
 
 .testimonial-chat > .byline > .name {
