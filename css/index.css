@@ -251,6 +251,52 @@ section {
   margin-top: 3rem;
 }
 
+.calls-section {
+  background: #00095C;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 9rem 6rem;
+}
+
+.calls-section a {
+  color: white;
+}
+
+.calls-section > .col {
+  box-sizing: border-box;
+  max-width: calc(50vw - 9rem);
+}
+
+.volunteers-section {
+  background: white url(../images/volunteers.gif) no-repeat 50vw center;
+  background-size: 40vw;
+  padding: 6rem 55vw 6rem 6rem;
+}
+
+.coc-section {
+  background: #00095C;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 9rem 6rem;
+}
+
+.coc-intro {
+  flex: 1;
+  margin-right: 3rem;
+}
+
+.coc-content {
+  flex: 2;
+}
+
+.coc-section a {
+  color: white;
+}
+
 .sponsors-section {
   background: white;
   padding: 6rem;
@@ -317,51 +363,6 @@ section {
   display: block;
 }
 
-.calls-section {
-  background: #00095C;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 9rem 6rem;
-}
-
-.calls-section a {
-  color: white;
-}
-
-.calls-section > .col {
-  box-sizing: border-box;
-  max-width: calc(50vw - 9rem);
-}
-
-.volunteers-section {
-  background: white url(../images/volunteers.gif) no-repeat 50vw center;
-  background-size: 40vw;
-  padding: 6rem 55vw 6rem 6rem;
-}
-
-.coc-section {
-  background: #00095C;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 9rem 6rem;
-}
-
-.coc-intro {
-  flex: 1;
-  margin-right: 3rem;
-}
-
-.coc-content {
-  flex: 2;
-}
-
-.coc-section a {
-  color: white;
-}
 
 .attrib-section {
   padding: 6rem;
