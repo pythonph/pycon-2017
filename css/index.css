@@ -321,11 +321,11 @@ section {
 }
 
 .sponsors-list > .sponsor.-elite {
-  width: 45%;
+  width: 55%;
 }
 
 .sponsors-list > .sponsor.-premium {
-  width: 25%;
+  width: 35%;
 }
 
 .sponsors-list > .sponsor.-starter {
@@ -336,8 +336,12 @@ section {
   width: 20%;
 }
 
-.sponsors-list > .sponsor {
+.sponsors-list > .sponsor.-media {
   width: 20%;
+}
+
+.sponsors-list > .sponsor {
+  width: 15%;
 }
 
 .sponsors-list > .sponsor > a {
