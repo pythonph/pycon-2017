@@ -1,0 +1,25 @@
+<section id="speakers" class="speakers-section">
+  <div class="speakers-intro">
+    <h2>Speakers</h2>
+    <p>We've gathered a bunch of talented and passionate people to share their
+    stories and adventures with Python and its community.</p>
+  </div>
+  <div class="speakers-list">
+    {% for speaker in speakers if speaker.Photo|length > 0 %}
+      <div class="speaker-info{{ ' -keynote' if speaker.Keynote else '' }}">
+      {% for photo in speaker.Photo %}
+      <div class="photo">
+        <img src="{{ photo.thumbnails.large.url }}">
+      </div>
+      {% endfor %}
+      <div class="label">
+        <h3 class="name">{{ speaker.Name }}</h3>
+        <div class="bio">{{ speaker.Bio }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="speakers-more">
+    We'll be announcing more speakers in the following weeks!
+  </div>
+</section>

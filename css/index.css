@@ -27,6 +27,13 @@ p:last-child {
 section {
   box-sizing: border-box;
 }
+main {
+  height: 100vh;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 
 .hero-section {
   background: #8fe0db url(../images/cityscape.png) no-repeat center top;
@@ -171,37 +178,96 @@ section {
 }
 
 .speakers-section {
-  background: #FFE824;
-  color: #3C313B;
+  background: #ffe824;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 9rem 6rem 0;
+  align-items: center;
+  flex-direction: column;
+  padding: 9rem 0;
 }
 
 .speakers-intro {
-  flex: 1;
-  margin-right: 3rem;
+  max-width: 40rem;
+  margin-bottom: 6rem;
 }
 
 .speakers-list {
-  flex: 2;
+  width: 80vw;
+  height: 100vh;
+  position: relative;
+  padding: 6rem 0;
 }
 
 .speaker-info {
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid;
-  margin-bottom: 3rem;
+  transition: transform .2s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.speaker-info:hover {
+  z-index: 1;
 }
 
-.speaker-info > .name {
-  line-height: 1;
-  margin-bottom: 0;
+.speaker-info.-keynote:before {
+  content: '🎵';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  line-height: 2rem;
+  text-align: center;
 }
 
 .speaker-info > .photo {
-  border: 1px solid;
-  width: 10rem;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.speaker-info > .photo > img {
+  width: 100%;
+}
+
+.speaker-info > .label {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(100% + 1.5rem);
+  transition: opacity .2s ease-in-out;
+  width: 20rem;
+  background: white;
+  padding: 1rem;
+  pointer-events: none;
+  opacity: 0;
+}
+.speaker-info:hover > .label {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.speaker-info > .label:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  margin-left: -1rem;
+  border: 1rem solid transparent;
+  border-bottom: 1rem solid white;
+}
+
+.speaker-info > .label > .name {
+  font-size: 1.4em;
+  margin-bottom: 0;
+}
+
+.speaker-info > .label > .bio {
+  white-space: pre-line;
 }
 
 .speakers-more {
@@ -362,7 +428,6 @@ section {
   padding: 3rem;
   margin: 0 -3rem;
 }
-
 .sponsors-list > .sponsor:hover > .description {
   display: block;
 }
