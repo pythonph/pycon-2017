@@ -4,6 +4,7 @@ const speakers = speakersList.selectAll('.speaker-info')
 
 const cols = 5
 const size = 128
+const zf = 0.2
 const {width, height} = speakersList.node().getBoundingClientRect()
 
 const data = d3.range(speakers.size()).map((i) => {
@@ -19,7 +20,7 @@ const data = d3.range(speakers.size()).map((i) => {
       row * height / 3
     ),
     z: (
-      0.2 *
+      zf *
       (
         Math.pow(-1, row) * col -
         (Math.pow(-1, row) < 1 ? 0 : cols)
@@ -31,4 +32,6 @@ const data = d3.range(speakers.size()).map((i) => {
 
 speakers.data(data)
   .style('transform', ({x, y, z}) => `translate3d(${x}px, ${y}px, ${z}px)`)
+  .select('.label')
+    .style('transform', d => `scale(${-d.z / zf / 2 + 1})`)
 

@@ -234,20 +234,24 @@ main {
 }
 
 .speaker-info > .label {
+  box-sizing: border-box;
+  width: 20rem;
+  padding: 1rem;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  top: calc(100% + 1.5rem);
-  transition: opacity .2s ease-in-out;
-  width: 20rem;
+  top: calc(100% + 2rem);
+  margin-left: -10rem;
+  transform-origin: 50% 0;
   background: white;
-  padding: 1rem;
   pointer-events: none;
+  margin-top: -10px;
   opacity: 0;
+  transition: all .2s ease-in-out;
 }
 .speaker-info:hover > .label {
   pointer-events: auto;
   opacity: 1;
+  margin-top: 0;
 }
 
 .speaker-info > .label:before {
@@ -262,11 +266,12 @@ main {
 }
 
 .speaker-info > .label > .name {
-  font-size: 1.4em;
-  margin-bottom: 0;
+  font-size: 1em;
+  margin-bottom: .75rem;
 }
 
 .speaker-info > .label > .bio {
+  font-size: .714em;
   white-space: pre-line;
 }
 
