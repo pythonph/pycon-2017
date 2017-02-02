@@ -33,5 +33,5 @@ const data = d3.range(speakers.size()).map((i) => {
 speakers.data(data)
   .style('transform', ({x, y, z}) => `translate3d(${x}px, ${y}px, ${z}px)`)
   .select('.label')
-    .style('transform', d => `scale(${-d.z / zf / 2 + 1})`)
+    .style('transform', d => `scale(${1 - d.z})`)
 
