@@ -3,6 +3,7 @@ const speakersList = d3.select('.speakers-list')
 const speakers = speakersList.selectAll('.speaker-info')
 
 const cols = 5
+const rowHeight = 200
 const size = 128
 const zf = 0.2
 const {width, height} = speakersList.node().getBoundingClientRect()
@@ -17,7 +18,7 @@ const data = d3.range(speakers.size()).map((i) => {
     ),
     y: (
       Math.sin(col) * height / 10 +
-      row * height / 3
+      row * rowHeight
     ),
     z: (
       zf *

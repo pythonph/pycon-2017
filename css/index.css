@@ -192,7 +192,7 @@ main {
 
 .speakers-list {
   width: 80vw;
-  height: 100vh;
+  height: 60rem;
   position: relative;
   padding: 6rem 0;
 }
@@ -225,7 +225,6 @@ main {
   width: 128px;
   height: 128px;
   border-radius: 50%;
-  object-fit: cover;
   overflow: hidden;
 }
 
