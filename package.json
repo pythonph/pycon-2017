@@ -1,13 +1,12 @@
 {
-  "private": true,
-  "dependencies": {},
-  "devDependencies": {
-    "stylelint": "^7.3.0",
-    "stylelint-config-standard": "^13.0.0",
-    "stylelint-rscss": "^0.2.0"
-  },
+  "name": "pycon-2017",
+  "repository": "git@github.com:pythonph/pycon-2017.git",
+  "author": "Mark Steve Samson <hello@marksteve.com>",
   "scripts": {
-    "test": "npm run lint:css",
-    "lint:css": "stylelint css/**/*"
+    "build": "babel --minified js/index.js > js/index.min.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-env": "^1.1.8"
   }
 }

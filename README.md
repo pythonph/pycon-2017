@@ -6,6 +6,7 @@
 virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
+yarn
 ```
 
 ## Config
@@ -20,4 +21,5 @@ Config is retrieved from environment variables:
 ```
 source venv/bin/activate
 python build.py
+yarn build
 ```
