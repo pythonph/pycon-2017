@@ -3,10 +3,12 @@
   "repository": "git@github.com:pythonph/pycon-2017.git",
   "author": "Mark Steve Samson <hello@marksteve.com>",
   "scripts": {
-    "build": "babel --minified js/index.js > js/index.min.js"
+    "watch": "babel --watch js/index.js --out-file js/index.min.js",
+    "build": "babel --minified js/index.js --out-file js/index.min.js"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
     "babel-preset-env": "^1.1.8"
-  }
+  },
+  "dependencies": {}
 }

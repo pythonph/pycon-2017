@@ -6,7 +6,7 @@
   </div>
   <div class="speakers-list">
     {% for speaker in speakers if speaker.Photo|length > 0 %}
-      <div class="speaker-info{{ ' -keynote' if speaker.Keynote else '' }}">
+    <div class="speaker-info{{ ' -keynote' if speaker.Keynote else '' }}">
       {% for photo in speaker.Photo %}
       <div class="photo">
         <img src="{{ photo.thumbnails.large.url }}">
@@ -18,8 +18,5 @@
       </div>
     </div>
     {% endfor %}
-  </div>
-  <div class="speakers-more">
-    We'll be announcing more speakers in the following weeks!
   </div>
 </section>

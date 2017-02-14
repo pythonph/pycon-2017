@@ -20,6 +20,5 @@ Config is retrieved from environment variables:
 
 ```
 source venv/bin/activate
-python build.py
-yarn build
+export $(cat .env | xargs) && python build.py && yarn build
 ```

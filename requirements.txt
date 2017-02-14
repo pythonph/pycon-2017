@@ -4,9 +4,11 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
+arrow==0.10.0
 jinja2==2.9.5
 MarkupSafe==0.23          # via jinja2
+python-dateutil==2.6.0    # via arrow
 python-frontmatter==0.3.1
 PyYAML==3.12              # via python-frontmatter
 requests==2.13.0
-six==1.10.0               # via python-frontmatter
+six==1.10.0               # via python-dateutil, python-frontmatter

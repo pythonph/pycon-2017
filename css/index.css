@@ -178,7 +178,10 @@ main {
 }
 
 .speakers-section {
-  background: #ffe824;
+  background: -webkit-linear-gradient(top, #ffe824, #ffffff);
+  background: -moz-linear-gradient(top, #ffe824, #ffffff);
+  background: -ms-linear-gradient(top, #ffe824, #ffffff);
+  background: -o-linear-gradient(top, #ffe824, #ffffff);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -274,51 +277,35 @@ main {
   white-space: pre-line;
 }
 
-.speakers-more {
-  font-size: 1.4em;
-  margin-top: 3rem;
+.schedule-section {
+  margin: 0 3rem 6rem;
 }
 
-.topics-section {
-  background: #FFE824;
-  color: #3C313B;
-  padding: 9rem 6rem;
+.schedule-section > h2 {
+  margin-bottom: 6rem;
 }
 
-.topics-list {
-  display: flex;
-  justify-content: space-between;
+.schedule-list {
+  position: relative;
+  margin-bottom: 9rem;
 }
 
-.topics-list > .col {
-  flex: 1;
-  margin-right: 1.5rem;
+.schedule-list > svg {
+  width: 100%;
 }
 
-.topics-list > .col:last-child {
-  margin-right: 0;
+.schedule-list > svg rect {
+  stroke: white;
+  stroke-width: 1;
 }
 
-.topic-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.topic-info > h3 {
-  margin-right: 1.5rem;
-  font-size: 1.4rem;
-  flex: 2;
-}
-
-.topic-info > p {
-  flex: 1;
-}
-
-.topics-more {
-  text-align: center;
-  font-size: 1.4em;
-  margin-top: 3rem;
+.schedule-list > .labels,
+.schedule-list > .labels > .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  line-height: 1;
 }
 
 .calls-section {
@@ -435,7 +422,6 @@ main {
 .sponsors-list > .sponsor:hover > .description {
   display: block;
 }
-
 
 .attrib-section {
   padding: 6rem;
