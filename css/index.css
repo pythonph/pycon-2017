@@ -278,16 +278,21 @@ main {
 }
 
 .schedule-section {
-  margin: 0 3rem 6rem;
+  margin: 0 3rem 9rem;
+}
+
+.schedule-section > h2,
+.schedule-section > h3 {
+  text-align: center;
 }
 
 .schedule-section > h2 {
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 
 .schedule-list {
   position: relative;
-  margin-bottom: 9rem;
+  margin-bottom: 3rem;
 }
 
 .schedule-list > svg {
