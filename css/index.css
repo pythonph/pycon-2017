@@ -332,9 +332,17 @@ main {
 }
 
 .volunteers-section {
-  background: white url(../images/volunteers.gif) no-repeat 50vw center;
-  background-size: 40vw;
-  padding: 6rem 55vw 6rem 6rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.volunteers-list {
+  list-style: none;
+  columns: 4;
+  text-align: left;
+  margin-top: 3rem;
 }
 
 .coc-section {
